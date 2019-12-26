@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Girassol&display=swap&subset=latin-ext');
+body{
+ 	background-color: #F2F4F3 !important;
+ 	margin: 0;
+}
+
+
+#title{
+	text-align: center;
+	font-family: Staatliches;
+	font-size: 40px;
+	color: #383934;
+}
+
+.headings{
+	text-align: center;
+	font-family: Staatliches;
+	color: #383934;
+}
+
+.category{
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	color: white;
+	font-family: Girassol;
+	font-size: 30px;
+
+}
+
+.backdrop1{
+	background-image: url('imgs/Technology.jpg');
+	width: 100%;
+	height: auto;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.backdrop2{
+	background-image: url('imgs/Entertainment.jpg');
+	width: 100%;
+	height: auto;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.backdrop3{
+	background-image: url('imgs/Health.jpg');
+	width: 100%;
+	height: auto;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.8);
+}
+
+.overlay{
+	background-color: rgba(0,0,0,0.2);
+    overflow: hidden;
+    height: 100%;
+    z-index: 2;
+}
+
+.cardModify{
+	background-color: rgba(0,0,0,0.4) !important;
+}
+
+.titleModify{
+	color: white !important;
+}
+
+.textModify{
+	color: white !important;
+}
+
+.flags{
+	max-width: 100%;
+	height: auto;
+}
+
+.flagLayout{
+	margin: 40px;
+}
+
+.flagLayout img{
+	filter: drop-shadow(3px 3px 3px #6e6e6e);
+}
+
+
+.flags:hover{
+	transition: all 1s ease;
+	transform: scale(1.1);
+}
+
+.card{
+	filter: drop-shadow(2px 2px 2px #000000);
+}
+
+a {
+	outline: none;
+}
+
+.navbar-container {
+	text-align: center;
+	background-color: #FB9F89;
+	box-shadow: 0px 2px 5px 1px #333333;
+	padding: 10px;
+	font-size: 0;
+}
+
+.navbar-container ul {
+	margin: 0;
+	padding: 0;
+	text-align: right;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar-container ul li {
+	display: inline-block;
+	font-size: 16px;
+}
+
+.navbar-container ul li a {
+	color: #ffffff;
+	text-decoration: none;
+	display: inline-block;	
+	padding: 10px;
+	transition: color 0.5s;
+}
+
+.navbar-container ul li .underline {
+	height: 3px;
+	background-color: transparent;
+	width: 0%;
+	transition: width 0.2s, background-color 0.5s;
+	margin: 0 auto;
+}
+
+.navbar-container ul li.active-link .underline {
+	width: 100%;
+	background-color: white;
+}
+
+.navbar-container ul li:hover .underline {
+	background-color: white;
+	width: 100%;
+}
+
+.navbar-container ul li:hover a {
+}
+
+.navbar-container ul li:active a {
+	transition: none;
+	color: rgba(255,255,255,0.76);
+}
+
+.navbar-container ul li:active .underline {
+	transition: none;
+	background-color: rgba(255,255,255,0.76);
+}

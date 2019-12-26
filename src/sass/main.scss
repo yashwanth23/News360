@@ -1,0 +1,41 @@
+/* Main SCSS File */
+
+// Base setup
+@import "settings";
+
+// Components
+@import "general";
+
+body {
+    font-family: $font-family;
+    ul li {
+        margin-bottom: $margins;
+        margin-left: $margins;
+        margin-right: $margins;
+        align-items: center;
+        span {
+            font-size: 14px;
+            color: $dark-color;
+            text-align: center;
+        }
+        img {
+          margin: 5px;
+          border-radius: 3px;
+          box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+          display: block;
+        }
+    }
+}
+
+.section {
+  width: 70%;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid lightgrey;
+  background-color: $light-color;
+}
+h1 {
+    text-align: center;
+}
+
